@@ -2,7 +2,7 @@ FROM debian
 
 MAINTAINER Waldemar Dibiazi Junior <waldemar@proredetelecom.com.br>
 
-RUN apt-get update && apt-get install -y apache2 && apt-get clean && curl -o /var/www/html/logo.png --remote-name --silent http://www.proredetelecom.com.br/wp-content/uploads/2017/04/proredeLogoScmall.png
+RUN apt-get update && apt-get install -y apache2 curl && apt-get clean
 
 ENV APACHE_LOCK_DIR="/var/lock"
 ENV APACHE_PID_FILE="/var/run/apache2.pid"
@@ -16,6 +16,6 @@ LABEL Description="Apache Webserver - Debian - v1.0"
 
 EXPOSE 80
 
-CMD /etc/init.d/apache2 start && /bin/bash
+CMD /etc/init.d/apache2 start && && curl -o /var/www/html/logo.png --remote-name --silent http://www.proredetelecom.com.br/wp-content/uploads/2017/04/proredeLogoScmall.png && /bin/bash
 
 
