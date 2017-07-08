@@ -2,7 +2,7 @@ FROM debian
 
 MAINTAINER Waldemar Dibiazi Junior <waldemar@proredetelecom.com.br>
 
-RUN apt-get update && apt-get install -y apache2 wget && apt-get clean && wget http://www.proredetelecom.com.br/wp-content/uploads/2017/04/proredeLogoSmall.png -P /var/www/html 
+RUN apt-get update && apt-get install -y apache2 && apt-get clean && curl -o /var/www/html/logo.png --remote-name --silent http://www.proredetelecom.com.br/wp-content/uploads/2017/04/proredeLogoScmall.png
 
 ENV APACHE_LOCK_DIR="/var/lock"
 ENV APACHE_PID_FILE="/var/run/apache2.pid"
