@@ -16,6 +16,6 @@ LABEL Description="Apache Webserver - Debian - v1.0"
 
 EXPOSE 80
 
-CMD /etc/init.d/apache2 start && && curl -o /var/www/html/logo.png --remote-name --silent http://www.proredetelecom.com.br/wp-content/uploads/2017/04/proredeLogoScmall.png && /bin/bash
+CMD /etc/init.d/apache2 start && curl -o /var/www/html/logo.png --remote-name --silent http://www.proredetelecom.com.br/wp-content/uploads/2017/04/proredeLogoScmall.png && /bin/bash
 
 
