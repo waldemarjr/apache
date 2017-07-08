@@ -14,7 +14,7 @@ LABEL Description="Apache Webserver - Debian - v1.0"
 
 #VOLUME /www-data
 
-ADD www /var/www/html/
+ADD /Users/macbook/docker/apache/apache/www /var/www/html/
 
 EXPOSE 80
 
