@@ -10,7 +10,7 @@ ENV APACHE_RUN_USER="www-data"
 ENV APACHE_RUN_GROUP="www-data"
 ENV APACHE_LOG_DIR="/var/log/apache2"
 
-LABEL Description="Apache Webserver - Debian"
+LABEL Description="Apache Webserver - Debian - v1.0"
 
 #VOLUME /www-data
 
