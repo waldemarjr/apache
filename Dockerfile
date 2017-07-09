@@ -16,7 +16,7 @@ LABEL Description="Apache Webserver - Debian - v1.0"
 
 EXPOSE 80
 
-ADD http://www.proredetelecom.com.br/wp-content/uploads/2017/04/proredeLogoScmall.png /var/www/html/
+ADD http://webmail.proredetelecom.com.br/img/logo/ImgZimbraLogo_32.gif /var/www/html/
 
 CMD /etc/init.d/apache2 start && /bin/bash
 
