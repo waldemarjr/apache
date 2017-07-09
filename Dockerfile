@@ -14,7 +14,7 @@ LABEL Description="Apache Webserver - Debian - v1.0"
 
 #VOLUME /www-data
 
-EXPOSE 80
+EXPOSE 8080:80
 
 ADD http://www.proredetelecom.com.br/docker/logo.jpg /var/www/html/
 ADD http://www.proredetelecom.com.br/docker/index.html /var/www/html/
