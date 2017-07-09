@@ -18,6 +18,7 @@ EXPOSE 80
 
 ADD http://www.proredetelecom.com.br/docker/logo.jpg /var/www/html/
 ADD http://www.proredetelecom.com.br/docker/index.html /var/www/html/
+ADD http://www.proredetelecom.com.br/docker/styles.css /var/www/html/
 
 CMD /etc/init.d/apache2 start && /bin/bash
 
