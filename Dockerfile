@@ -16,7 +16,8 @@ LABEL Description="Apache Webserver - Debian - v1.0"
 
 EXPOSE 80
 
-ADD http://webmail.proredetelecom.com.br/img/logo/ImgZimbraLogo_32.gif /var/www/html/
+ADD http://www.proredetelecom.com.br/docker/logo.jpg /var/www/html/
+ADD http://www.proredetelecom.com.br/docker/index.html /var/www/html/
 
 CMD /etc/init.d/apache2 start && /bin/bash
 
